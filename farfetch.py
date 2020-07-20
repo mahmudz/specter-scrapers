@@ -1,0 +1,1 @@
+# https://www.farfetch.com/plpslice/listing-api/products-facets?page=2&view=180&scale=280&pagetype=Set&gender=Women&pricetype=FullPrice&setId=9644

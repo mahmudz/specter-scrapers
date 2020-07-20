@@ -1,0 +1,13 @@
+curl 'https://ko4w2gbink-3.algolianet.com/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(3.35.1)%3B%20Browser&x-algolia-application-id=KO4W2GBINK&x-algolia-api-key=dfa5df098f8d677dd2105ece472a44f8' \
+  -H 'Connection: keep-alive' \
+  -H 'accept: application/json' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'Origin: https://www.endclothing.com' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Referer: https://www.endclothing.com/gb/clothing' \
+  -H 'Accept-Language: en-US,en;q=0.9,th;q=0.8' \
+  --data-raw '{"requests":[{"indexName":"catalog_products_en","params":"userToken=anonymous-0fea7226-ef73-441e-9699-c253eab401a9&analyticsTags=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&page=1&facetFilters=%5B%5B%22categories%3AClothing%22%5D%2C%5B%22websites_available_at%3A1%22%5D%5D&filters=&facets=%5B%22*%22%5D&hitsPerPage=120&ruleContexts=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&clickAnalytics=true"},{"indexName":"catalog_products_en","params":"userToken=anonymous-0fea7226-ef73-441e-9699-c253eab401a9&analyticsTags=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&page=1&facetFilters=%5B%5B%22websites_available_at%3A1%22%5D%2C%5B%22categories%3AClothing%22%5D%5D&facets=%5B%22*%22%5D&hitsPerPage=120&ruleContexts=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&clickAnalytics=true"},{"indexName":"catalog_products_en","params":"userToken=anonymous-0fea7226-ef73-441e-9699-c253eab401a9&analyticsTags=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&page=1&facetFilters=%5B%5B%22websites_available_at%3A1%22%5D%5D&filters=&facets=categories&hitsPerPage=120&ruleContexts=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&analytics=false"},{"indexName":"catalog_products_en","params":"userToken=anonymous-0fea7226-ef73-441e-9699-c253eab401a9&analyticsTags=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&page=1&facetFilters=%5B%5B%22categories%3AClothing%22%5D%5D&filters=&facets=websites_available_at&hitsPerPage=120&ruleContexts=%5B%22browse%22%2C%22web%22%2C%22v2%22%2C%22gb%22%2C%22clothing%22%5D&analytics=false"}]}' \
+  --compressed
