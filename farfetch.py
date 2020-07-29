@@ -1,14 +1,16 @@
 url = "https://www.farfetch.com/plpslice/listing-api/products-facets?page=2&view=180&scale=280&pagetype=Set&gender=Women&pricetype=FullPrice&setId=9644"
 
 import requests
+from DataHandler import insert_all_products
 
 
-def save_male_products():
+def get_male_products():
     allProductsRequest = requests.get(url)
     rows = []
 
     if allProductsRequest.status_code == 200:
         data = allProductsRequest.json()
+
         if data['listingItems']['items']:
             products = data['listingItems']['items']
         else:
@@ -18,6 +20,7 @@ def save_male_products():
             row = {
                 'product_id': product['id'],
                 'name': product['shortDescription'],
+                'description': product['shortDescription'],
                 'brand': {
                     'name': product['brand']['name'],
                 },
@@ -26,18 +29,16 @@ def save_male_products():
                 },
                 'thumb': product['images']['model'],
                 'tags': 'female',
-                'original_currency': product['attributes']['original_currency'],
+                'original_currency': product['priceInfo']['currencyCode'],
                 'prices': product['priceInfo']['finalPrice'],
                 'usd_price': product['priceInfo']['finalPrice'],
-                'retailer_website': product['attributes']['retailer_website'],
-                'retailer_link': product['attributes']['retailer_link'],
-                'affiliate_link': product['attributes']['affiliate_link'],
+                'retailer_link': '',
+                'affiliate_link': product['url'],
             }
 
             rows.append(row)
-            print(rows)
+        return rows
 
-            break
+insert_all_products(get_male_products())
 
 
-save_male_products()
